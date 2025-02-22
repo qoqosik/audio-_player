@@ -37,6 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Issues",
             src: "src/audio/issues.mp3",
             artwork: "src/img/baha.jpg"
+        },
+        {
+            title: "How Deep Is Your Love",
+            src: "src/audio/How Deep Is Your Love.mp3",
+            artwork: "src/img/san.gif"
         }
     ];
     let currentTrackIndex = 0;
