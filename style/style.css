@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(135deg, #f0e6f6, #d7e1fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+.audio-player {
+    background: linear-gradient(145deg, #ffffff, #e6d3f5);
+    border-radius: 30px;
+    padding: 35px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 450px;
+    transition: transform 0.3s;
+}
+
+.audio-player:hover {
+    transform: scale(1.02);
+}
+
+.title {
+    color: #8e44ad;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.artwork {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+audio {
+    display: none;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.controls button {
+    background-color: #ffb6c1;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.controls button:hover {
+    transform: scale(1.1);
+    background-color: #ff99ac;
+}
+
+.button-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.progress {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+progress {
+    width: 100%;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #e0c7fa;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0c7fa;
+    border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(to right, #9b59b6, #e74c3c);
+    border-radius: 8px;
+    transition: width 0.2s ease-in-out;
+}
+
+progress::-moz-progress-bar {
+    background: linear-gradient(to right, #9b59b6, #e74c3c);
+    border-radius: 8px;
+}

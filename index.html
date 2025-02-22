@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Милый Аудиоплеер</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css"> <!-- Подключаем CSS -->
+</head>
+<body>
+    <div class="audio-player">
+        <h1 class="title" id="songTitle">NewJeans</h1>
+        <img src="src/img/newjeans.jpg" alt="Пиксельное искусство" class="artwork" id="songArtwork">
+        <audio id="audio">
+            <source id="audioSource" src="src/audio/NewJeans - New Jeans.mp3" type="audio/mp3">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+        <div class="controls">
+            <button id="prev"><img src="src/img/prev-icon.png" alt="Previous" class="button-icon"></button>
+            <button id="playPause"><img src="src/img/play-icon.png" alt="Play/Pause" class="button-icon"></button>
+            <button id="next"><img src="src/img/next-icon.png" alt="Next" class="button-icon"></button>
+        </div>
+        <div class="progress">
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+    </div>
+    <script src="script/script.js"></script> <!-- Подключаем JS -->
+</body>
+</html>
